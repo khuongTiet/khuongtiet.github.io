@@ -1,0 +1,29 @@
+h1{
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Comics Sans MS";
+}
+
+/*like a class*/
+#anotherh1 {
+  color: blue;
+  font-family: "Times";
+}
+
+/*on hover*/
+#anotherh1:hover {
+  color: yellow;
+}
+
+#purple {
+  background-color: purple;
+  height: 100px;
+  width: 100px;
+}
+
+.blog{
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+}
