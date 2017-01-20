@@ -48,29 +48,12 @@ header{
             padding: 14px 16px;
             text-decoration: none;
           }
-
+            /* on hover */
             #header-content nav li a:hover {
               background-color: #111;
             }
 
-h1{
-  color: red;
-  text-align: center;
-  text-decoration: underline;
-  font-family: "Comics Sans MS";
-  margin-top: 0;
-}
 
-/*like a class*/
-#anotherh1 {
-  color: blue;
-  font-family: "Times";
-}
-
-/*on hover*/
-#anotherh1:hover {
-  color: yellow;
-}
 
 #purple {
   background-color: purple;
