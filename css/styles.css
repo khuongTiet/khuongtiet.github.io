@@ -7,72 +7,108 @@ html, body{
 
 header{
   width: 100%;
-  height: 100px;
   background: #bdbdbd;
   position: fixed;
   z-index: 10;
   top: 0;
 }
 
-  #header-content {
-    width: 1000px; margin: 0 auto; padding: 35px 0 0 0;
-    overflow: hidden;
-  }
-    #header-content h1{
-      float: left;
-      font-family: "Helvetica", Arial, sans-serif;
-    }
-      #header-content h1 a{
-        text-decoration: none;
-        color: white;
-      }
-    #header-content nav{
-      float: right;
-    }
-      #header-content nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-        #header-content nav li{
-          float: left;
-          font-family: "Helvetica", Arial, sans-serif;
-        }
-
-          #header-content nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-          }
-            /* on hover */
-            #header-content nav li a:hover {
-              background-color: #111;
-            }
-
-
-
-#purple {
-  background-color: purple;
-  height: 100px;
-  width: 100px;
+#header-content ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
+#header-content ul.topnav li {float: left;}
+
+#header-content ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: "Helvetica", Helvetica, Arial;
+}
+
+#header-content ul.topnav li a:hover {background-color: #555;}
 
 #banner{
   width: 100%;
-  height: 500px;
+  height: 900px;
   position: fixed;
-  top: 100px;
+  top: 40px;
   background: #707070;
 }
+  #banner a {
+    width: 100%;
+    height: 100%;
+  }
 
 #content {
   width: 100%;
   position: relative;
-  top: 400px;
+  top: 800px;
   background: #ebebeb;
   height: 1500px;
+}
+
+#content h1 {
+  font-family: "Helvetica", Helvetica, Arial;
+  font-size: 50px;
+  text-align: center;
+  color: #555;
+}
+
+#mainPage {
+  width: 100%;
+  top: 10px;
+  background: #ebebeb;
+  height: 2500px;
+}
+
+#p {
+  font-size: 40px;
+  font-family: Arial;
+  color: white;
+}
+
+#champions {
+  list-style-type: none;
+  height: 100%;
+  background: #ebebeb;
+}
+
+#champions ul{
+  list-style-type: none;
+}
+
+#champions ul li {float: left;}
+#champions ul li a {
+    float: left;
+    margin: 15px;
+  }
+
+
+.input[type=text]{
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 20px;
+  font-family: "Helvetica", Helvetica, Arial;
+  background-color: white;
+    background-image: url("./img/searchicon.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus{
+  width: 100%;
 }

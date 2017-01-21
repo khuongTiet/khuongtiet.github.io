@@ -1,0 +1,10 @@
+#mainPage #champions ul.championSelect {
+  list-style-type: none;
+  display: inline;
+  overflow: hidden;
+}
+
+  #mainPage #champions ul.championSelect li {float: left;}
+  #mainPage #champions ul.championSelect li a {
+    display : inline-block;
+  }
