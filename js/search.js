@@ -40,6 +40,7 @@ function itemBuild(json) {
   json[0].items.forEach(function(value) {
     build += itemData[value].name + "\n";
   });
+  console.log("Hi");
   return build;
 }
 
