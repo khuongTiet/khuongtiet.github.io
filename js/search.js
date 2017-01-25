@@ -21,7 +21,6 @@ function load() {
 
     loadJSON("./js/data-dragon/7.1.1/data/en_US/item.json", function(response) {
         var actual_JSON = JSON.parse(response);
-        console.log(actual_JSON);
         console.log(actual_JSON[0]);
     })
 }
