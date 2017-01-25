@@ -44,8 +44,8 @@ function itemBuild(json) {
   return build;
 }
 
-function clicked() {
-  var url = "https://" + hostname + "/champion/Ahri/" + "items/finished/mostPopular?api_key=" + ggKey;
+function clicked(name) {
+  var url = "https://" + hostname + "/champion/" + name + "items/finished/mostPopular?api_key=" + ggKey;
   console.log(httpGetAsync(url, itemBuild));
 }
 
