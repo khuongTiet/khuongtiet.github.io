@@ -44,7 +44,7 @@ function itemBuild(json) {
 }
 
 function clicked() {
-  var url = hostname + "/champion/Aatrox/" + "items/finished/mostPopular?api_key=" + ggKey;
+  var url = "https://" + hostname + "/champion/Aatrox/" + "items/finished/mostPopular?api_key=" + ggKey;
   document.getElementById("demo").innerHTML = httpGetAsync(url, itemBuild);
 }
 
