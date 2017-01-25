@@ -17,11 +17,11 @@ function loadJSON(file, callback) {
  }
 
 
-function load() {
+function load(path) {
 
-    loadJSON("./js/data-dragon/7.1.1/data/en_US/item.json", function(response) {
+    loadJSON(path, function(response) {
         var actual_JSON = JSON.parse(response);
-        console.log(actual_JSON[0]);
+        return actual_JSON;
     })
 }
 
@@ -36,6 +36,7 @@ function skillOrder(response, json) {
 //gg.champions.items.finished.popular("Nunu", itemBuild);//
 function itemBuild(json) {
   var build = "";
+  var itemData = load("./js/data-dragon/7.1.1/data/en_US/item.json");
   json[0].items.forEach(function(value) {
     build += itemData[value].name + "\n";
   });
@@ -43,7 +44,8 @@ function itemBuild(json) {
 }
 
 function clicked() {
-  load();
+  var url = hostname + "/champion/Aatrox/" + "items/finished/mostPopular?api_key=" + ggKey;
+  document.getElementById("demo").innerHTML = httpGetAsync(url, itemBuild);
 }
 
 function httpGetAsync(theUrl, callback)
