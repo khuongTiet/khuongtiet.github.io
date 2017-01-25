@@ -45,7 +45,7 @@ function itemBuild(json) {
 
 function clicked() {
   var url = "https://" + hostname + "/champion/Ahri/" + "items/finished/mostPopular?api_key=" + ggKey;
-  document.getElementById("demo").innerHTML = httpGetAsync(url, itemBuild);
+  console.log(httpGetAsync(url, itemBuild));
 }
 
 function httpGetAsync(theUrl, callback)
