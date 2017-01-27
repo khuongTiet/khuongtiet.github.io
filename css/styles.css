@@ -3,6 +3,7 @@ html, body{
   margin: 0;
   border: 0;
   vertical-align: baseline;
+  background-color: #ebebeb;
 }
 
 header{
@@ -34,7 +35,47 @@ header{
   font-family: "Helvetica", Helvetica, Arial;
 }
 
-#header-content ul.topnav li a:hover {background-color: #555;}
+#header-content ul.topnav .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header-content ul.topnav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+#header-content ul.topnav li.dropdown {
+    display: inline-block;
+}
+
+#header-content ul.topnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#header-content ul.topnav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#header-content ul.topnav .dropdown-content a:hover {background-color: #f1f1f1}
+
+#header-content ul.topnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 
 #banner{
   width: 100%;
@@ -87,28 +128,8 @@ header{
 }
 
 #champions ul li {float: left;}
+
 #champions ul li a {
     float: left;
     margin: 15px;
-  }
-
-
-.input[type=text]{
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 20px;
-  font-family: "Helvetica", Helvetica, Arial;
-  background-color: white;
-    background-image: url("./img/searchicon.png");
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus{
-  width: 100%;
 }
