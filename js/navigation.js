@@ -10,6 +10,6 @@ document.getElementById("header-content").innerHTML =
     '</div>' +
   '</li>' +
   '<li><a href=./pdf/Resume.pdf>Resume</a></li>' +
-  '<li><a href="./contact.html">Contact</a></li>' +
+  '<li><a href="./contact">Contact</a></li>' +
   '<li style="float:right"><a class="icon" href="https://khuongtiet.github.io"><img src=./img/giticon3.png></a></li>' +
 '</ul>';
