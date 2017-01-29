@@ -28,11 +28,15 @@ header{
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 18px 16px;
+  padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 20px;
   font-family: "Helvetica", Helvetica, Arial;
+}
+
+#header-content ul.topnav li a.icon {
+  padding: 5px 10px 0 10px;
 }
 
 #header-content ul.topnav .dropbtn {
