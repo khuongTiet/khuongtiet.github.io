@@ -148,10 +148,26 @@ header{
   height: 100%;
 }
 
+.landing #page {
+  font-size: 40px;
+  font-family: Helvetica, Arial;
+  color: #555;
+  text-align: center;
+  height: 600px;
+  position: relative;
+  top: 50%;
+}
+
+.landing #page h1 {
+  position: relative;
+  top: 35%;
+  text-align: center;
+}
+
 .contactInfo #page {
   font-size: 40px;
   font-family: Helvetica, Arial;
-  color: white;
+  color: #555;
   text-align: center;
   height: 600px;
   position: relative;

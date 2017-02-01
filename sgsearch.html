@@ -1,3 +1,17 @@
+<!--
+version 1.0
+Onclick, hide all icons, display champion splash art in the background as well as icons of each skill appear as a link
+upon clicking the link, scroll automatically to a part of the page that shows in more detail the skills tooltips
+
+To-do list :
+ - Make all other icons hide on click
+ - Make splash art appear in background
+ - Make each skill icon show up
+ - Create sections for each skill
+ - Have the icons linked to each section
+ - Implement a restart button -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,152 +34,20 @@
   <p id="demo">
     WIP
   </p>
+  <br><br><br><br>
+  <div id="hiddenIcon">
+  </div>
+
   <br><br><br>
 
   <div id = "champions">
-    <ul>
-        <li><a class="champIcon" id="Aatrox" href=javascript:void(0) onclick="clicked(this.id);"><img src=./js/data-dragon/7.1.1/img/champion/Aatrox.png></a></li>
-        <li><a class="champIcon" id="Ahri" href="#Ahri"><img src=./js/data-dragon/7.1.1/img/champion/Ahri.png></a></li>
-        <li><a class="champIcon" id="Akali" href="#Akali"><img src=./js/data-dragon/7.1.1/img/champion/Akali.png></a></li>
-        <li><a class="champIcon" id="Alistar" href="#Alistar"><img src=./js/data-dragon/7.1.1/img/champion/Alistar.png></a></li>
-        <li><a class="champIcon" href="#Amumu"><img src=./js/data-dragon/7.1.1/img/champion/Amumu.png></a></li>
-        <li><a class="champIcon" href="#Anivia"><img src=./js/data-dragon/7.1.1/img/champion/Anivia.png></a></li>
-        <li><a class="champIcon" href="#Annie"><img src=./js/data-dragon/7.1.1/img/champion/Annie.png></a></li>
-        <li><a class="champIcon" href="#Ashe"><img src=./js/data-dragon/7.1.1/img/champion/Ashe.png></a></li>
-        <li><a class="champIcon" href="#AurelionSol"><img src=./js/data-dragon/7.1.1/img/champion/AurelionSol.png></a></li>
-        <li><a class="champIcon" href="#Azir"><img src=./js/data-dragon/7.1.1/img/champion/Azir.png></a></li>
-        <li><a class="champIcon" href="#Bard"><img src=./js/data-dragon/7.1.1/img/champion/Bard.png></a></li>
-        <li><a class="champIcon" href="#Blitzcrank"><img src=./js/data-dragon/7.1.1/img/champion/Blitzcrank.png></a></li>
-        <li><a class="champIcon" href="#Brand"><img src=./js/data-dragon/7.1.1/img/champion/Brand.png></a></li>
-        <li><a class="champIcon" href="#Braum"><img src=./js/data-dragon/7.1.1/img/champion/Braum.png></a></li>
-        <li><a class="champIcon" href="#Caitlyn"><img src=./js/data-dragon/7.1.1/img/champion/Caitlyn.png></a></li>
-        <li><a class="champIcon" href="#Camille"><img src=./js/data-dragon/7.1.1/img/champion/Camille.png></a></li>
-        <li><a class="champIcon" href="#Cassiopeia"><img src=./js/data-dragon/7.1.1/img/champion/Cassiopeia.png></a></li>
-        <li><a class="champIcon" href="#Chogath"><img src=./js/data-dragon/7.1.1/img/champion/Chogath.png></a></li>
-        <li><a class="champIcon" href="#Corki"><img src=./js/data-dragon/7.1.1/img/champion/Corki.png></a></li>
-        <li><a class="champIcon" href="#Darius"><img src=./js/data-dragon/7.1.1/img/champion/Darius.png></a></li>
-        <li><a class="champIcon" href="#Diana"><img src=./js/data-dragon/7.1.1/img/champion/Diana.png></a></li>
-        <li><a class="champIcon" href="#Draven"><img src=./js/data-dragon/7.1.1/img/champion/Draven.png></a></li>
-        <li><a class="champIcon" href="#DrMundo"><img src=./js/data-dragon/7.1.1/img/champion/DrMundo.png></a></li>
-        <li><a class="champIcon" href="#Ekko"><img src=./js/data-dragon/7.1.1/img/champion/Ekko.png></a></li>
-        <li><a class="champIcon" href="#Elise"><img src=./js/data-dragon/7.1.1/img/champion/Elise.png></a></li>
-        <li><a class="champIcon" href="#Evelynn"><img src=./js/data-dragon/7.1.1/img/champion/Evelynn.png></a></li>
-        <li><a class="champIcon" href="#Ezreal"><img src=./js/data-dragon/7.1.1/img/champion/Ezreal.png></a></li>
-        <li><a class="champIcon" href="#FiddleSticks"><img src=./js/data-dragon/7.1.1/img/champion/FiddleSticks.png></a></li>
-        <li><a class="champIcon" href="#Fiora"><img src=./js/data-dragon/7.1.1/img/champion/Fiora.png></a></li>
-        <li><a class="champIcon" href="#Fizz"><img src=./js/data-dragon/7.1.1/img/champion/Fizz.png></a></li>
-        <li><a class="champIcon" href="#Galio"><img src=./js/data-dragon/7.1.1/img/champion/Galio.png></a></li>
-        <li><a class="champIcon" href="#Gangplank"><img src=./js/data-dragon/7.1.1/img/champion/Gangplank.png></a></li>
-        <li><a class="champIcon" href="#Garen"><img src=./js/data-dragon/7.1.1/img/champion/Garen.png></a></li>
-        <li><a class="champIcon" href="#Gnar"><img src=./js/data-dragon/7.1.1/img/champion/Gnar.png></a></li>
-        <li><a class="champIcon" href="#Gragas"><img src=./js/data-dragon/7.1.1/img/champion/Gragas.png></a></li>
-        <li><a class="champIcon" href="#Graves"><img src=./js/data-dragon/7.1.1/img/champion/Graves.png></a></li>
-        <li><a class="champIcon" href="#Hecarim"><img src=./js/data-dragon/7.1.1/img/champion/Hecarim.png></a></li>
-        <li><a class="champIcon" href="#Heimerdinger"><img src=./js/data-dragon/7.1.1/img/champion/Heimerdinger.png></a></li>
-        <li><a class="champIcon" href="#Illaoi"><img src=./js/data-dragon/7.1.1/img/champion/Illaoi.png></a></li>
-        <li><a class="champIcon" href="#Irelia"><img src=./js/data-dragon/7.1.1/img/champion/Irelia.png></a></li>
-        <li><a class="champIcon" href="#Ivern"><img src=./js/data-dragon/7.1.1/img/champion/Ivern.png></a></li>
-        <li><a class="champIcon" href="#Janna"><img src=./js/data-dragon/7.1.1/img/champion/Janna.png></a></li>
-        <li><a class="champIcon" href="#JarvanIV"><img src=./js/data-dragon/7.1.1/img/champion/JarvanIV.png></a></li>
-        <li><a class="champIcon" href="#Jax"><img src=./js/data-dragon/7.1.1/img/champion/Jax.png></a></li>
-        <li><a class="champIcon" href="#Jayce"><img src=./js/data-dragon/7.1.1/img/champion/Jayce.png></a></li>
-        <li><a class="champIcon" href="#Jhin"><img src=./js/data-dragon/7.1.1/img/champion/Jhin.png></a></li>
-        <li><a class="champIcon" href="#Jinx"><img src=./js/data-dragon/7.1.1/img/champion/Jinx.png></a></li>
-        <li><a class="champIcon" href="#Kalista"><img src=./js/data-dragon/7.1.1/img/champion/Kalista.png></a></li>
-        <li><a class="champIcon" href="#Karma"><img src=./js/data-dragon/7.1.1/img/champion/Karma.png></a></li>
-        <li><a class="champIcon" href="#Karthus"><img src=./js/data-dragon/7.1.1/img/champion/Karthus.png></a></li>
-        <li><a class="champIcon" href="#Kassadin"><img src=./js/data-dragon/7.1.1/img/champion/Kassadin.png></a></li>
-        <li><a class="champIcon" href="#Katarina"><img src=./js/data-dragon/7.1.1/img/champion/Katarina.png></a></li>
-        <li><a class="champIcon" href="#Kayle"><img src=./js/data-dragon/7.1.1/img/champion/Kayle.png></a></li>
-        <li><a class="champIcon" href="#Kennen"><img src=./js/data-dragon/7.1.1/img/champion/Kennen.png></a></li>
-        <li><a class="champIcon" href="#Khazix"><img src=./js/data-dragon/7.1.1/img/champion/Khazix.png></a></li>
-        <li><a class="champIcon" href="#Kindred"><img src=./js/data-dragon/7.1.1/img/champion/Kindred.png></a></li>
-        <li><a class="champIcon" href="#Kled"><img src=./js/data-dragon/7.1.1/img/champion/Kled.png></a></li>
-        <li><a class="champIcon" href="#KogMaw"><img src=./js/data-dragon/7.1.1/img/champion/KogMaw.png></a></li>
-        <li><a class="champIcon" href="#Leblanc"><img src=./js/data-dragon/7.1.1/img/champion/Leblanc.png></a></li>
-        <li><a class="champIcon" href="#LeeSin"><img src=./js/data-dragon/7.1.1/img/champion/LeeSin.png></a></li>
-        <li><a class="champIcon" href="#Leona"><img src=./js/data-dragon/7.1.1/img/champion/Leona.png></a></li>
-        <li><a class="champIcon" href="#Lissandra"><img src=./js/data-dragon/7.1.1/img/champion/Lissandra.png></a></li>
-        <li><a class="champIcon" href="#Lucian"><img src=./js/data-dragon/7.1.1/img/champion/Lucian.png></a></li>
-        <li><a class="champIcon" href="#Lulu"><img src=./js/data-dragon/7.1.1/img/champion/Lulu.png></a></li>
-        <li><a class="champIcon" href="#Lux"><img src=./js/data-dragon/7.1.1/img/champion/Lux.png></a></li>
-        <li><a class="champIcon" href="#Malphite"><img src=./js/data-dragon/7.1.1/img/champion/Malphite.png></a></li>
-        <li><a class="champIcon" href="#Malzahar"><img src=./js/data-dragon/7.1.1/img/champion/Malzahar.png></a></li>
-        <li><a class="champIcon" href="#Maokai"><img src=./js/data-dragon/7.1.1/img/champion/Maokai.png></a></li>
-        <li><a class="champIcon" href="#MasterYi"><img src=./js/data-dragon/7.1.1/img/champion/MasterYi.png></a></li>
-        <li><a class="champIcon" href="#MissFortune"><img src=./js/data-dragon/7.1.1/img/champion/MissFortune.png></a></li>
-        <li><a class="champIcon" href="#Mordekaiser"><img src=./js/data-dragon/7.1.1/img/champion/Mordekaiser.png></a></li>
-        <li><a class="champIcon" href="#Morgana"><img src=./js/data-dragon/7.1.1/img/champion/Morgana.png></a></li>
-        <li><a class="champIcon" href="#Nami"><img src=./js/data-dragon/7.1.1/img/champion/Nami.png></a></li>
-        <li><a class="champIcon" href="#Nasus"><img src=./js/data-dragon/7.1.1/img/champion/Nasus.png></a></li>
-        <li><a class="champIcon" href="#Nautilus"><img src=./js/data-dragon/7.1.1/img/champion/Nautilus.png></a></li>
-        <li><a class="champIcon" href="#Nidalee"><img src=./js/data-dragon/7.1.1/img/champion/Nidalee.png></a></li>
-        <li><a class="champIcon" href="#Nocturne"><img src=./js/data-dragon/7.1.1/img/champion/Nocturne.png></a></li>
-        <li><a class="champIcon" href="#Nunu"><img src=./js/data-dragon/7.1.1/img/champion/Nunu.png></a></li>
-        <li><a class="champIcon" href="#Olaf"><img src=./js/data-dragon/7.1.1/img/champion/Olaf.png></a></li>
-        <li><a class="champIcon" href="#Orianna"><img src=./js/data-dragon/7.1.1/img/champion/Orianna.png></a></li>
-        <li><a class="champIcon" href="#Pantheon"><img src=./js/data-dragon/7.1.1/img/champion/Pantheon.png></a></li>
-        <li><a class="champIcon" href="#Poppy"><img src=./js/data-dragon/7.1.1/img/champion/Poppy.png></a></li>
-        <li><a class="champIcon" href="#Quinn"><img src=./js/data-dragon/7.1.1/img/champion/Quinn.png></a></li>
-        <li><a class="champIcon" href="#Rammus"><img src=./js/data-dragon/7.1.1/img/champion/Rammus.png></a></li>
-        <li><a class="champIcon" href="#RekSai"><img src=./js/data-dragon/7.1.1/img/champion/RekSai.png></a></li>
-        <li><a class="champIcon" href="#Renekton"><img src=./js/data-dragon/7.1.1/img/champion/Renekton.png></a></li>
-        <li><a class="champIcon" href="#Rengar"><img src=./js/data-dragon/7.1.1/img/champion/Rengar.png></a></li>
-        <li><a class="champIcon" href="#Riven"><img src=./js/data-dragon/7.1.1/img/champion/Riven.png></a></li>
-        <li><a class="champIcon" href="#Rumble"><img src=./js/data-dragon/7.1.1/img/champion/Rumble.png></a></li>
-        <li><a class="champIcon" href="#Ryze"><img src=./js/data-dragon/7.1.1/img/champion/Ryze.png></a></li>
-        <li><a class="champIcon" href="#Sejuani"><img src=./js/data-dragon/7.1.1/img/champion/Sejuani.png></a></li>
-        <li><a class="champIcon" href="#Shaco"><img src=./js/data-dragon/7.1.1/img/champion/Shaco.png></a></li>
-        <li><a class="champIcon" href="#Shen"><img src=./js/data-dragon/7.1.1/img/champion/Shen.png></a></li>
-        <li><a class="champIcon" href="#Shyvana"><img src=./js/data-dragon/7.1.1/img/champion/Shyvana.png></a></li>
-        <li><a class="champIcon" href="#Singed"><img src=./js/data-dragon/7.1.1/img/champion/Singed.png></a></li>
-        <li><a class="champIcon" href="#Sion"><img src=./js/data-dragon/7.1.1/img/champion/Sion.png></a></li>
-        <li><a class="champIcon" href="#Sivir"><img src=./js/data-dragon/7.1.1/img/champion/Sivir.png></a></li>
-        <li><a class="champIcon" href="#Skarner"><img src=./js/data-dragon/7.1.1/img/champion/Skarner.png></a></li>
-        <li><a class="champIcon" href="#Sona"><img src=./js/data-dragon/7.1.1/img/champion/Sona.png></a></li>
-        <li><a class="champIcon" href="#Swain"><img src=./js/data-dragon/7.1.1/img/champion/Swain.png></a></li>
-        <li><a class="champIcon" href="#Syndra"><img src=./js/data-dragon/7.1.1/img/champion/Syndra.png></a></li>
-        <li><a class="champIcon" href="#TahmKench"><img src=./js/data-dragon/7.1.1/img/champion/TahmKench.png></a></li>
-        <li><a class="champIcon" href="#Taliyah"><img src=./js/data-dragon/7.1.1/img/champion/Taliyah.png></a></li>
-        <li><a class="champIcon" href="#Talon"><img src=./js/data-dragon/7.1.1/img/champion/Talon.png></a></li>
-        <li><a class="champIcon" href="#Taric"><img src=./js/data-dragon/7.1.1/img/champion/Taric.png></a></li>
-        <li><a class="champIcon" href="#Teemo"><img src=./js/data-dragon/7.1.1/img/champion/Teemo.png></a></li>
-        <li><a class="champIcon" href="#Thresh"><img src=./js/data-dragon/7.1.1/img/champion/Thresh.png></a></li>
-        <li><a class="champIcon" href="#Tristana"><img src=./js/data-dragon/7.1.1/img/champion/Tristana.png></a></li>
-        <li><a class="champIcon" href="#Trundle"><img src=./js/data-dragon/7.1.1/img/champion/Trundle.png></a></li>
-        <li><a class="champIcon" href="#Tryndamere"><img src=./js/data-dragon/7.1.1/img/champion/Tryndamere.png></a></li>
-        <li><a class="champIcon" href="#TwistedFate"><img src=./js/data-dragon/7.1.1/img/champion/TwistedFate.png></a></li>
-        <li><a class="champIcon" href="#Twitch"><img src=./js/data-dragon/7.1.1/img/champion/Twitch.png></a></li>
-        <li><a class="champIcon" href="#Udyr"><img src=./js/data-dragon/7.1.1/img/champion/Udyr.png></a></li>
-        <li><a class="champIcon" href="#Urgot"><img src=./js/data-dragon/7.1.1/img/champion/Urgot.png></a></li>
-        <li><a class="champIcon" href="#Varus"><img src=./js/data-dragon/7.1.1/img/champion/Varus.png></a></li>
-        <li><a class="champIcon" href="#Vayne"><img src=./js/data-dragon/7.1.1/img/champion/Vayne.png></a></li>
-        <li><a class="champIcon" href="#Veigar"><img src=./js/data-dragon/7.1.1/img/champion/Veigar.png></a></li>
-        <li><a class="champIcon" href="#Velkoz"><img src=./js/data-dragon/7.1.1/img/champion/Velkoz.png></a></li>
-        <li><a class="champIcon" href="#Vi"><img src=./js/data-dragon/7.1.1/img/champion/Vi.png></a></li>
-        <li><a class="champIcon" href="#Viktor"><img src=./js/data-dragon/7.1.1/img/champion/Viktor.png></a></li>
-        <li><a class="champIcon" href="#Vladimir"><img src=./js/data-dragon/7.1.1/img/champion/Vladimir.png></a></li>
-        <li><a class="champIcon" href="#Volibear"><img src=./js/data-dragon/7.1.1/img/champion/Volibear.png></a></li>
-        <li><a class="champIcon" href="#Warwick"><img src=./js/data-dragon/7.1.1/img/champion/Warwick.png></a></li>
-        <li><a class="champIcon" href="#WuKong"><img src=./js/data-dragon/7.1.1/img/champion/MonkeyKing.png></a></li>
-        <li><a class="champIcon" href="#Xerath"><img src=./js/data-dragon/7.1.1/img/champion/Xerath.png></a></li>
-        <li><a class="champIcon" href="#XinZhao"><img src=./js/data-dragon/7.1.1/img/champion/XinZhao.png></a></li>
-        <li><a class="champIcon" href="#Yasuo"><img src=./js/data-dragon/7.1.1/img/champion/Yasuo.png></a></li>
-        <li><a class="champIcon" href="#Yorick"><img src=./js/data-dragon/7.1.1/img/champion/Yorick.png></a></li>
-        <li><a class="champIcon" href="#Zac"><img src=./js/data-dragon/7.1.1/img/champion/Zac.png></a></li>
-        <li><a class="champIcon" href="#Zed"><img src=./js/data-dragon/7.1.1/img/champion/Zed.png></a></li>
-        <li><a class="champIcon" href="#Ziggs"><img src=./js/data-dragon/7.1.1/img/champion/Ziggs.png></a></li>
-        <li><a class="champIcon" href="#Zilean"><img src=./js/data-dragon/7.1.1/img/champion/Zilean.png></a></li>
-        <li><a class="champIcon" href="#Zyra"><img src=./js/data-dragon/7.1.1/img/champion/Zyra.png></a></li>
-    </ul>
   </div>
 
 </div>
 
 <script src="js/search.js"></script>
 <script src="js/navigation.js"></script>
-
-
+<script src="js/writeChampion.js"></script>
 
 
 
