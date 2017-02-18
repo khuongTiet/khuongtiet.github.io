@@ -58,13 +58,34 @@ function load(path) {
     })
 }
 
+function displaySkills(id) {
+  document.getElementById("Q").innerHTML = '<img src=./js/data-dragon/7.1.1/img/spell/' + id + 'Q.png>';
+  document.getElementById("W").innerHTML = '<img src=./js/data-dragon/7.1.1/img/spell/' + id + 'W.png>';
+  document.getElementById("E").innerHTML = '<img src=./js/data-dragon/7.1.1/img/spell/' + id + 'E.png>';
+  document.getElementById("R").innerHTML = '<img src=./js/data-dragon/7.1.1/img/spell/' + id + 'R.png>';
+}
+
 function clicked(id) {
   hideAll(id);
   document.getElementById("hiddenIcon").innerHTML =
   '<a href="#mainPage" onclick="resetVisibility()"><img src=./js/data-dragon/7.1.1/img/champion/' + id + '.png></a>'
+  '<h1> Champion Name, Champion Title </h1>'
   ;
-  document.getElementById("champions").innerHTML = '<img src=./js/data-dragon/img/champion/splash/' + id + '_0.jpg width = 100%>';
+  document.getElementById("champions").innerHTML =
+  '<img src=./js/data-dragon/img/champion/splash/' + id + '_0.jpg width = 100%>' +
+  '<div id="skills">' +
+    '<div class="champSkills" id="Q">' +
+    '</div>' +
+    '<div class="champSkills" id="W">' +
+    '</div>' +
+    '<div class="champSkills" id="E">' +
+    '</div>' +
+    '<div class="champSkills" id="R">' +
+    '</div>' +
+  '</div>';
   document.getElementById("champions").style.visibility = "visible";
+  displaySkills(id);
+
 }
 
 

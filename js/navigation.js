@@ -8,7 +8,7 @@ document.getElementById("header-content").innerHTML =
     '<div class="dropdown-content">' +
       '<a href=./sgsearch>SGSearch</a>' +
       '<a href=./choose>Choose</a>' +
-      '<a href=#WIP2>WIP</a>' +
+      '<a href=./release-performance/index.html>accelr</a>' +
     '</div>' +
   '</li>' +
   '<li><a href=./pdf/Resume.pdf>Resume</a></li>' +

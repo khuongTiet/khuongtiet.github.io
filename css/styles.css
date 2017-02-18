@@ -179,3 +179,16 @@ header{
   top: 35%;
   text-align: center;
 }
+
+#hiddenIcon h1 {
+  float: right;
+  font: 40px;
+  font-family: Helvetica, Arial;
+  color: #555;
+  text-align: center;
+}
+
+.champSkills {
+  position : absolute;
+
+}
