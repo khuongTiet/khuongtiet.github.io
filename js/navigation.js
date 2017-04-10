@@ -7,7 +7,7 @@ document.getElementById("header-content").innerHTML =
     '<a href="javascript:void(0)" class="dropbtn">Projects</a>' +
     '<div class="dropdown-content">' +
       '<a href=./sgsearch>SGSearch</a>' +
-      '<a href=./choose>Choose</a>' +
+      '<a href=./choose>WIP</a>' +
       '<a href=./accelr/index.html>accelr</a>' +
     '</div>' +
   '</li>' +
