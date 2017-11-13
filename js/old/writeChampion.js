@@ -1,4 +1,20 @@
+const ddbase = 'http://ddragon.leagueoflegends.com/cdn/';
+const ddversion = '6.24.1';
 
+$(function() {
+  var champions = [];
+  $.ajax({
+    url: `${ddbase}/${ddversion}/data/en_US/champion.json`,
+    type: 'GET',
+    dataType: 'json',
+    headers: {"Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "DELETE, GET, POST, PATCH, OPTIONS TRACE",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"}
+  }).done(function(data) {
+    champions = data;
+  });
+  console.log(champions);
+});
 function writeChampionCode() {
 document.getElementById("champions").innerHTML =
 '<ul>' +
