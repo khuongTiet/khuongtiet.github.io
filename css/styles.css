@@ -24,7 +24,7 @@ html, body {
   justify-content: center;
   width: 70%;
   background: #3B293C;
-  padding: 2em;
+  padding: 0.25em;
   top: -12em;
 }
 
@@ -33,35 +33,49 @@ html, body {
   position: relative;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: stretch;
   background: white;
   padding: 2em;
   margin: 1em;
+  border-top-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.subsection-head {
+  position: relative;
+  top: -2em;
+  left: -2em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  width: 20%;
 }
 
 .subsection h2 {
-  align-self: center;
-  color: #561832;
-  font-size: 3em;
-  margin: 0;
+  flex-flow: center;
   padding: 0.25em;
+  margin: 0;
+  font-size: 1em;
+  background: #561832;
+  color: white;
+  border-radius: 0.25em;
+  text-align: center;
+  margin: .25em;
 }
 
 .subsection-icon {
-  position: absolute;
+  align-self: flex-start;
+  position: relative;
   left: 0;
   top: 0;
 }
 
+.subsection-body {
+  width: 80%;
+}
+
 .icon {
   width: 3em;
-}
-
-.subsection-p {
-}
-
-.info {
-
 }
 
 .info-head {
@@ -74,6 +88,58 @@ html, body {
 
 .info-detail {
  display: none;
+}
+
+.courses {
+  list-style-type: none;
+}
+
+.course {
+  margin: .5em 0 .5em 0;
+}
+
+.course-name {
+  background: #1F1849;
+  color: white;
+  border-radius: .5em;
+  width: auto;
+  text-align: center;
+  margin: .5em 0 .5em 0;
+  padding: .25em;
+}
+
+.course-description {
+  display: none;
+}
+
+.work {
+  list-style-type: none;
+}
+
+.work li {
+  margin: 0.25em 0 0.25em 0;
+}
+
+.contact-container {
+  width: 80%;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column
+}
+
+
+.contact-info {
+  flex-grow: 1;
+}
+
+
+.profile {
+  object-fit: contain;
+  height: 50%;
+  width: 50%;
+  transform: rotate(90deg);
 }
 
 #utility-bar {
@@ -175,12 +241,6 @@ html, body {
 @media only screen and (min-width: 768px) {
     body {
       font-size: 16px;
-    }
-    .subsection {
-      flex-flow: column wrap;
-    }
-    .subsection h2 {
-      align-self: flex-start;
     }
     #banner {
       height: 60%;
