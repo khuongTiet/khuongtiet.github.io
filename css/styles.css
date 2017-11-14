@@ -134,6 +134,9 @@ html, body {
   flex-grow: 1;
 }
 
+.profile-picture {
+  text-align: center;
+}
 
 .profile {
   object-fit: contain;
