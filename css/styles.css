@@ -184,13 +184,18 @@ html, body {
   background-position: center;
 }
 
+#banner h1 {
+  text-align: center;
+}
+
 #banner-img {
   width: 100%;
   height: auto;
 }
 
 #story {
-  font-size: 1.5em
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, .7);
 }
 
 #utility-bar ul {
@@ -259,6 +264,7 @@ html, body {
     #banner {
       height: 60%;
       background-size: cover;
+      background-position: left;
       background-attachment: fixed;
     }
     .icon {
