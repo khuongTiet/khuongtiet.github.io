@@ -23,7 +23,7 @@ html, body {
   flex-flow: column wrap;
   justify-content: center;
   width: 70%;
-  background: rgba(59, 41, 60, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   padding: 0.25em;
   top: -12em;
 }
@@ -56,7 +56,7 @@ html, body {
   padding: 0.25em;
   margin: 0;
   font-size: 1em;
-  background: #523953;
+  background:  rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 0.25em;
   text-align: center;
@@ -81,7 +81,7 @@ html, body {
 .info-head {
   display: block;
   padding: 0.5em;
-  background: #281D3C;
+  background: rgba(0, 0, 0, 0.8);
   text-align: center;
   color: white;
   border-top-left-radius: 0.4em;
@@ -188,6 +188,7 @@ html, body {
 #banner h1 {
   text-align: center;
   margin-top: 5em;
+  color: #f4ebeb;
 }
 
 #banner-img {
@@ -202,9 +203,8 @@ html, body {
   background: rgba(0, 0, 0, .7);
 }
 
-#utility-bar ul {
+.top-utility-bar {
   display: flex;
-  height: 100%;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
@@ -226,6 +226,17 @@ html, body {
 
 #utility-bar li a:hover {
   background: rgba(0, 0, 0, 0.85);
+}
+
+#utility-bar li a:active {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.side-scroll-utility {
+  position: fixed;
+  flex-direction: column;
+  height: 60%;
+  background: rgba(0, 0, 0, .6);
 }
 
 #nav-bar {
