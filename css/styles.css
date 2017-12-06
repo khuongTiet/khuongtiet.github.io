@@ -22,7 +22,7 @@ html, body {
   position: relative;
   flex-flow: column wrap;
   justify-content: center;
-  width: 80%;
+  width: 94%;
   background: rgba(0, 0, 0, 0.9);
   padding: 0.25em;
   top: -12em;
@@ -275,7 +275,40 @@ html, body {
   background: rgba(0, 0, 0, .6);
 }
 
+.contact-body {
+  text-align: right;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 641px) {
+  #banner {
+    background-size: cover;
+  }
+  #banner h1 {
+    margin-top: -0.25em;
+  }
+  #main-content {
+    top: -8em;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  #banner h1 {
+    margin-top: 2em;
+  }
+  #main-content {
+    top: -24em;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  #banner h1 {
+    margin-top: 6em;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) {
     body {
       font-size: 16px;
     }
@@ -286,7 +319,7 @@ html, body {
       background-attachment: fixed;
     }
     #banner h1 {
-      margin-top: 4.5em;
+      margin-top: 4em;
       letter-spacing: 0.125em;
     }
     .top-utility-bar {
@@ -298,10 +331,15 @@ html, body {
       overflow: hidden;
       background: transparent;
       top: 0;
-      height: 4em;
+      height: 4.5em;
+    }
+    .top-utility-bar li {
+      display: flex;
+      flex-direction: column;
     }
     #main-content {
-      width: 76%;
+      width: 78%;
+      top: -12em;
     }
     .subsection h2 {
       letter-spacing: 0.5em;
@@ -309,6 +347,11 @@ html, body {
     .icon {
       width: 100%;
       height: inherit;
+    }
+    .icon-description {
+      width: 1em;
+      padding-top: -0.5em;
+      display: none;
     }
     .side-scroll-utility {
       position: fixed;
@@ -319,4 +362,10 @@ html, body {
       height: 60%;
       background: rgba(0, 0, 0, .6);
     }
+}
+
+@media only screen and (min-width: 1200px) {
+  #banner h1 {
+    top: 6em;
+  }
 }

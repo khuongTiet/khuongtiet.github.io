@@ -9,7 +9,7 @@ $(function () {
       }, 800, function(){
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 
   $(window).scroll(function () {
@@ -21,6 +21,10 @@ $(function () {
       });
     } else {
       $('.top-utility-bar').removeClass('side-scroll-utility');
+      anime({
+        targets: '.utility-icon',
+        rotate: '1turn'
+      });
     }
   });
 
