@@ -175,6 +175,8 @@ html, body {
 .profile {
   object-fit: contain;
   width: 75%;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 #utility-bar {
