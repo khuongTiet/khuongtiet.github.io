@@ -197,8 +197,9 @@ html, body {
   height: 30em;
   color: white;
   background-image: url('../img/banner.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 #banner h1 {
@@ -305,9 +306,6 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
-  #banner {
-    background-size: cover;
-  }
   #banner h1 {
     top: 3em;
   }
@@ -323,9 +321,7 @@ html, body {
     }
     #banner {
       height: 32em;
-      background-size: cover;
       background-position: left;
-      background-attachment: fixed;
     }
     #banner h1 {
       letter-spacing: 0.125em;
