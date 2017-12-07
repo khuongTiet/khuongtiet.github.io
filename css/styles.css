@@ -8,6 +8,7 @@ html, body {
   background-color: #ebebeb;
   font-size: 8px;
   font-family: 'Lato', sans-serif, 'Helvectica';
+  line-height: 2em;
 }
 
 .main-container {
@@ -273,6 +274,15 @@ html, body {
 .contact-body {
   text-align: right;
   font-size: 2em;
+}
+
+.paragraph-text {
+  display: flex;
+  justify-content: center;
+}
+
+.wide-body {
+  width: 90%;
 }
 
 @media only screen and (min-width: 320px) {

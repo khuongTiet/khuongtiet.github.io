@@ -6,6 +6,10 @@ $(function () {
     }
   });
 
+  /*
+       Scrolling with jQuery from https://stackoverflow.com/a/18071231
+   */
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -18,6 +22,7 @@ $(function () {
       });
     }
   });
+
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > ($('#utility-bar').offset().top + $('#utility-bar').outerHeight())) {
