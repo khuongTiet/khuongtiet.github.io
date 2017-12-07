@@ -1,4 +1,11 @@
 $(function () {
+  const rotateIcons = anime({
+    targets: '.uicon',
+    rotate: {
+      value: '1turn'
+    }
+  });
+
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -14,17 +21,13 @@ $(function () {
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > ($('#utility-bar').offset().top + $('#utility-bar').outerHeight())) {
+      if (!$('.top-utility-bar').hasClass('side-scroll-utility')){
+        rotateIcons.restart();
+      }
       $('.top-utility-bar').addClass('side-scroll-utility');
-      anime({
-        targets: '.utility-icon',
-        rotate: '1turn'
-      });
     } else {
       $('.top-utility-bar').removeClass('side-scroll-utility');
-      anime({
-        targets: '.utility-icon',
-        rotate: '1turn'
-      });
+      rotateIcons.restart();
     }
   });
 
@@ -34,5 +37,11 @@ $(function () {
 
   $('.courses').on('click', '.course-name', function (e) {
     $(e.target).next().slideToggle();
-  })
+  });
+
+  $('.utility-icon').on('click', function (e) {
+    $('.utility-icon').removeClass('utility-icon-active');
+    $(this).addClass('utility-icon-active');
+  });
+
 });

@@ -91,7 +91,7 @@ html, body {
   padding: 1em 0 1em 0;
 }
 
-.icon {
+.uicon {
   width: 5em;
   height: 5em;
 }
@@ -187,14 +187,6 @@ html, body {
   top: 0;
 }
 
-#utility-bar > ul > li > a {
-  padding: 0;
-}
-
-.utility-icon {
-  padding: 0.05em;
-}
-
 #banner {
   display: flex;
   flex-direction: column;
@@ -211,7 +203,7 @@ html, body {
 #banner h1 {
   align-self: center;
   text-align: center;
-  margin-top: 2.25em;
+  margin-top: 1.25em;
   color: #f4ebeb;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -283,19 +275,22 @@ html, body {
   font-size: 2em;
 }
 
+@media only screen and (min-width: 320px) {
+  #banner h1 {
+    position: relative;
+    top: 3em;
+  }
+}
+
 @media only screen and (min-width: 568px) {
   #main-content {
-    top: -3em;
+    top: -10em;
   }
 }
 
 @media only screen and (min-width: 641px) {
-  #banner h1 {
-    position: relative;
-    top: -2em;
-  }
   #main-content {
-    top: -20em;
+    top: -14em;
   }
 }
 
@@ -347,7 +342,10 @@ html, body {
     .subsection h2 {
       letter-spacing: 0.5em;
     }
-    .icon {
+    .utility-icon-active {
+      background: rgba(0, 0, 0, 0.85);
+    }
+    .uicon {
       width: 100%;
       height: inherit;
     }
@@ -362,7 +360,7 @@ html, body {
       left: inherit;
       width: auto;
       flex-direction: column;
-      height: 60%;
+      height: 30em;
       background: rgba(0, 0, 0, .6);
     }
 }
@@ -373,7 +371,7 @@ html, body {
   }
 
   #main-content {
-    top: -12em;
+    top: -26em;
   }
 }
 
