@@ -300,6 +300,9 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
+  #banner {
+    background-size: cover;
+  }
   #banner h1 {
     top: 3em;
   }
@@ -365,17 +368,18 @@ html, body {
 }
 
 @media only screen and (min-width: 1200px) {
+  #banner {
+    height: 48em;
+  }
+
   #main-content {
     top: -12em;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  #banner {
-    height: 34em;
-  }
   #main-content {
-    top: -12em;
+    top: -16em;
   }
 }
 
