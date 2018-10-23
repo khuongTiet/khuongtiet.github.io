@@ -106,7 +106,12 @@ class App extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={uciLogo} style={{ height: "6rem" }} alt={"UCI"} />
+                  <img
+                    src={uciLogo}
+                    className="imageDropshadow"
+                    style={{ height: "6rem" }}
+                    alt={"UCI"}
+                  />
                 </a>
               </div>
               <div>for Software Engineering</div>
@@ -131,18 +136,21 @@ class App extends Component {
                 link={"https://www.ultramobile.com"}
                 src={ultra}
                 title={"Software Engineering Intern"}
+                height={"8rem"}
               />
               <Experience
                 dateRange={"October 2017 - June 2018"}
                 link={"http://www.delphidisplay.com"}
                 src={delphi}
                 title={"Software Engineering Intern"}
+                height={"4rem"}
               />
               <Experience
                 dateRange={"June 2017 - December 2017"}
                 link={"https://theportal.io"}
                 src={portal}
                 title={"Web Development Intern"}
+                height={"5rem"}
               />
             </div>
           }

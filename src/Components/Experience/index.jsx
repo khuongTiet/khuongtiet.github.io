@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import "./Experience.css";
 
+const styleSwitcher = source => {
+  console.log(source);
+};
+
 export default class Experience extends Component {
   render() {
-    const { dateRange, link, src, title } = this.props;
+    const { dateRange, height, link, src, title } = this.props;
 
     return (
       <div className="experienceContainer">
@@ -16,7 +20,12 @@ export default class Experience extends Component {
         >
           <div className="experienceHalf">
             <a href={link} target="_blank">
-              <img src={src} alt={"Work"} />
+              <img
+                src={src}
+                className="imageDropshadow"
+                alt={"Work"}
+                style={{ height }}
+              />
             </a>
           </div>
           <div className="experienceHalf">

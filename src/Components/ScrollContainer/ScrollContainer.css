@@ -1,15 +1,16 @@
 .mainContainer {
   text-align: center;
   font-family: "Montserrat";
-  background: #ffd89b; /* fallback for old browsers */
+  background: #4b79a1; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    #19547b,
-    #ffd89b
+    #283e51,
+    #4b79a1
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    #19547b,
-    #ffd89b
+    #283e51,
+    #4b79a1
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   justify-content: center;
 }
