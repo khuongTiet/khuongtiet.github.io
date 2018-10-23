@@ -83,7 +83,7 @@ const BusinessCard = props => {
               GitHub
             </a>
             <a
-              href="https://linkedin./com/khuong-tiet"
+              href="https://www.linkedin.com/in/khuong-tiet/"
               style={{ textDecoration: "none" }}
             >
               LinkedIn
