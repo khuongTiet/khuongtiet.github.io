@@ -1,19 +1,8 @@
 import React, { Component } from "react";
-import { Header } from "semantic-ui-react";
 import "./Experience.css";
 
 export default class Experience extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isActive: false,
-      isDisplayingDetails: false
-    };
-  }
-
   render() {
-    const { isActive, isDisplayingDetails } = this.state;
     const { dateRange, link, src, title } = this.props;
 
     return (
@@ -27,7 +16,7 @@ export default class Experience extends Component {
         >
           <div className="experienceHalf">
             <a href={link} target="_blank">
-              <img src={src} style={{}} />
+              <img src={src} alt={"Work"} />
             </a>
           </div>
           <div className="experienceHalf">

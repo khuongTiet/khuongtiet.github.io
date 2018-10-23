@@ -31,8 +31,16 @@ const BusinessCard = props => {
           }}
         >
           <div style={{ display: "flex", alignItems: "center" }}>
-            <a href="#" target="_blank">
-              <img style={{ height: "14rem" }} src={profile} />
+            <a
+              href="https://github.com/khuongTiet/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                style={{ height: "14rem" }}
+                src={profile}
+                alt={"ProfilePicture"}
+              />
             </a>
           </div>
         </div>
@@ -101,8 +109,6 @@ export default class ScrollContainer extends Component {
   }
 
   componentDidMount = () => {
-    const height = this.container.clientHeight;
-
     window.addEventListener("scroll", this.handleScroll);
   };
 
@@ -149,7 +155,7 @@ export default class ScrollContainer extends Component {
   };
 
   render() {
-    const { currentScrollPosition, heightMultiplier, scrollIndex } = this.state;
+    const { currentScrollPosition, heightMultiplier } = this.state;
     const { children } = this.props;
 
     return (

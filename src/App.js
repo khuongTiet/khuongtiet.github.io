@@ -50,7 +50,7 @@ class App extends Component {
               <div />
               <div>KHUONG TIET</div>
               <div>
-                <img src={arrow} style={{ height: "4rem" }} />
+                <img src={arrow} style={{ height: "4rem" }} alt={"V"} />
               </div>
             </div>
           }
@@ -100,8 +100,12 @@ class App extends Component {
             >
               <div>I went to school at</div>
               <div style={{ width: "100vw" }}>
-                <a href="https://uci.edu" target="_blank">
-                  <img src={uciLogo} style={{ height: "6rem" }} />
+                <a
+                  href="https://uci.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={uciLogo} style={{ height: "6rem" }} alt={"UCI"} />
                 </a>
               </div>
               <div>for Software Engineering</div>
