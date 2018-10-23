@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+
 import ScrollContainer from "./Components/ScrollContainer";
 import Experience from "./Components/Experience";
 
@@ -153,6 +154,7 @@ class App extends Component {
           content={
             <div>
               <div>Ray Tracer</div>
+              <div />
               <div>Flocking Simulator</div>
             </div>
           }
