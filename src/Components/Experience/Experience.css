@@ -1,0 +1,25 @@
+.experienceContainer {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.detailSwitcher {
+  font-size: 2rem !important;
+}
+
+.detailContainer {
+  font-size: 1.5rem;
+}
+
+.detailedView {
+  width: 100vw;
+}
+
+.detailItem {
+  font-size: 1.5rem !important;
+}
+
+.experienceHalf {
+  width: 100%;
+}
