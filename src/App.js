@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import ScrollContainer from "./Components/ScrollContainer";
-import Experience from "./Components/Experience";
+import ScrollContainer from "./components/ScrollContainer";
+import Experience from "./components/Experience";
 
 import uciLogo from "./img/uci-stacked-wordmark-white.png";
 import ultra from "./img/ultra_logo.png";
