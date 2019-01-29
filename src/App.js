@@ -15,6 +15,8 @@ import expressLogo from "./img/express_logo.png";
 import python from "./img/python_logo.png";
 import java from "./img/java_logo.png";
 import arrow from "./img/arrow-down-white.png";
+import cloth from "./clothSimulator.mov";
+import demo from "./game_demo.mov";
 
 const BlurSection = props => {
   const { blurAmount, content, fontSize, height, zIndex } = props;
@@ -161,9 +163,64 @@ class App extends Component {
         <BlurSection
           content={
             <div>
-              <div>Ray Tracer</div>
-              <div />
-              <div>Flocking Simulator</div>
+              <div>
+                <a
+                  href="https://github.com/khuongTiet/velvet"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Cloth Simulator
+                </a>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
+              >
+                <video
+                  controls="controls"
+                  width="800"
+                  height="600"
+                  name="Cloth Simulator"
+                  src={cloth}
+                />
+              </div>
+            </div>
+          }
+        />
+        <BlurSection
+          content={
+            <div>
+              <div>DoggieDaycare</div>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
+              >
+                <video
+                  controls="controls"
+                  width="800"
+                  height="600"
+                  name="Doggie Daycare"
+                  src={demo}
+                />
+              </div>
+            </div>
+          }
+        />
+        <BlurSection
+          content={
+            <div>
+              <div style={{ margin: "1rem", fontSize: "6rem" }}>
+                Other Projects
+              </div>
+              <div>
+                <div>News Webapp</div>
+                <div>Flocking Simulator</div>
+              </div>
             </div>
           }
         />
