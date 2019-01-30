@@ -1,8 +1,10 @@
 {
   "main.css": "static/css/main.8b2d1569.css",
   "main.css.map": "static/css/main.8b2d1569.css.map",
-  "main.js": "static/js/main.c3097cf1.js",
-  "main.js.map": "static/js/main.c3097cf1.js.map",
+  "main.js": "static/js/main.3d4f9d99.js",
+  "main.js.map": "static/js/main.3d4f9d99.js.map",
+  "static/media/clothSimulator.mov": "static/media/clothSimulator.50b4c67f.mov",
+  "static/media/game_demo.mov": "static/media/game_demo.4ca07275.mov",
   "static/media/java_logo.png": "static/media/java_logo.8885ce98.png",
   "static/media/node_logo.png": "static/media/node_logo.4cac309e.png",
   "static/media/profile.jpg": "static/media/profile.714bbcf8.jpg",
